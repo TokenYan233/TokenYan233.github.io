@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.yan-me.top</id>
+    <title>在自由而蔚蓝的天空下 | Yan-ME.ToP</title>
+    <updated>2021-08-22T15:46:24.808Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://www.yan-me.top"/>
+    <link rel="self" href="https://www.yan-me.top/atom.xml"/>
+    <logo>https://www.yan-me.top/images/avatar.png</logo>
+    <icon>https://www.yan-me.top/favicon.ico</icon>
+    <rights>All rights reserved 2021, 在自由而蔚蓝的天空下 | Yan-ME.ToP</rights>
+    <entry>
+        <title type="html"><![CDATA[真•最终典藏 | 叠满塞爆 Win7 从发布到结束所有补丁 安装ISO | 全补丁Win7 x64+x86 专业+旗舰]]></title>
+        <id>https://www.yan-me.top/l9H56zV2Pne3Y/</id>
+        <link href="https://www.yan-me.top/l9H56zV2Pne3Y/">
+        </link>
+        <updated>2021-05-28T14:36:21.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="叠满塞爆-win7-从发布到结束所有补丁">叠满塞爆 Win7 从发布到结束所有补丁</h3>
+<blockquote>
+<p>💽真·最终典藏📀</p>
+</blockquote>
+<p><strong>使用dism离线处理，非后封。删除了cd手动安装功能（正经人谁插盘双击装系统啊？），保留了cd启动安装，可刻盘。单cd文件内包括了x64 的专业版+旗舰版和x86 的专业版+旗舰版。同时在次基础上制作了完整版和精简版，方便洁癖爱好者和充满妥协的使用者安装</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="叠满塞爆-win7-从发布到结束所有补丁">叠满塞爆 Win7 从发布到结束所有补丁</h3>
+<blockquote>
+<p>💽真·最终典藏📀</p>
+</blockquote>
+<p><strong>使用dism离线处理，非后封。删除了cd手动安装功能（正经人谁插盘双击装系统啊？），保留了cd启动安装，可刻盘。单cd文件内包括了x64 的专业版+旗舰版和x86 的专业版+旗舰版。同时在次基础上制作了完整版和精简版，方便洁癖爱好者和充满妥协的使用者安装</strong></p>
+<!-- more -->
+<hr>
+<blockquote>
+<p><em><strong>特别说明，当前系统为研究打包，非后封装，不包括激活工具、激活码、推广软件、设置首页、等与Windows原版结构无关的东西。</strong></em></p>
+</blockquote>
+<h5 id="完整版塞进了自win7发布到去年截止几乎除了一个停止服务提示所有能找到的补丁包括">完整版塞进了自win7发布到去年截止（几乎，除了一个停止服务提示）所有能找到的补丁，包括：</h5>
+<ul>
+<li>2016.5 发布的所有补丁大汇总</li>
+<li>2016.8 前 发布的每月零碎补丁</li>
+<li>2016.8~2020.1 发布的每月仅安全更新、月度汇总更新，IE功能与安全更新、.NET更新</li>
+<li>同步发布的每月非强制的每月数字结尾补丁（一般是堆栈更新、非强制的功能型更新、或者是给每月更新制造出的问题擦屁股的更新）</li>
+</ul>
+<h3 id="x64x86-共计-133g-的补丁更新并清理了更新缓存">x64+x86 共计 <em>133G</em> 的补丁更新，并清理了更新缓存</h3>
+<h6 id="除此之外完整版中没动任何一项配置甚至一个示例图片超原汁原味">除此之外，完整版中没动任何一项配置，甚至一个示例图片，超原汁原味</h6>
+<blockquote>
+<p>因完全按照原版CD,光驱启动安装仅显示旗舰版。如要安装专业版，请使用第三方安装器读取install.wim或自己更改CD中的cfg文件</p>
+</blockquote>
+<h6 id="最终效果完整版">最终效果，完整版：</h6>
+<ul>
+<li>64位 单CD文件约 <em>4.1G</em>，比原版大了<em>0.92G</em>。包含专业版+旗舰版</li>
+<li>32位 单CD文件约 <em>2.85G</em>，比原版大了<em>0.38G</em>。包含专业版+旗舰版</li>
+</ul>
+<h6 id="精简版在以上基础上完全按照习惯删掉了各种我用不上的东西和部分驱动">精简版在以上基础上，完全按照习惯删掉了各种我用不上的东西，和部分驱动。</h6>
+<p>######大致精简列表和我的那个600m的win7差不多，同时再塞上各种优化。</p>
+<blockquote>
+<p>注，精简版不做任何保证，如有任何问题请安装完整版。因为精简问题，精简版与原版补丁数量并不一致，请勿惊慌</p>
+</blockquote>
+<h6 id="最终效果精简版">最终效果，精简版：</h6>
+<ul>
+<li>64位 单CD文件约 <em>2.45G</em>，比原版缩了<em>0.73G</em>。包含专业版+旗舰版</li>
+<li>32位 单CD文件约 <em>1.52G</em>，比原版大了<em>0.95G</em>。包含专业版+旗舰版</li>
+</ul>
+<p>https://cloud.189.cn/t/uUrAbemiMjee (访问码：z64q)</p>
+<p>见：Win7_全补丁终结 文件夹下</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[终于又可以使用ChromeUpdateSharp更新Chrome后自动插入Chrome绿色化插件辣]]></title>
+        <id>https://www.yan-me.top/nOxcONt1Eu2K1/</id>
+        <link href="https://www.yan-me.top/nOxcONt1Eu2K1/">
+        </link>
+        <updated>2021-03-18T15:45:44.000Z</updated>
+        <summary type="html"><![CDATA[<p>ChromeUpdateSharp是一款众所周知的，自动下载Chrome更新的工具<br>
+开发大佬tsungkang主页：<a href="https://csharp.love/chrome-update-tool.html" title="csharp.love/chrome-update-tool.html">csharp.love/chrome-update-tool.html</a></p>
+<ul>
+<li>当年很舒服的一个功能，就是配合GreenChrome的绿色化功能，自动识别新版本，自动下载，自动安装，然后再配合GreenChrome插件的绿色化，保证每天用的都是绿色化配置文件的Chrome</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<p>ChromeUpdateSharp是一款众所周知的，自动下载Chrome更新的工具<br>
+开发大佬tsungkang主页：<a href="https://csharp.love/chrome-update-tool.html" title="csharp.love/chrome-update-tool.html">csharp.love/chrome-update-tool.html</a></p>
+<ul>
+<li>当年很舒服的一个功能，就是配合GreenChrome的绿色化功能，自动识别新版本，自动下载，自动安装，然后再配合GreenChrome插件的绿色化，保证每天用的都是绿色化配置文件的Chrome</li>
+</ul>
+<!-- more -->
+<ul>
+<li>
+<p>然后突然有一天，shuax大佬因为被喷GreenChrome是病毒？不再更新了。转而去开发了Chrome++，不再支持替换文件名劫持。新版本Chrome也修改了入口，GreenChrome不再支持，使用即崩溃。想用？得去shuax大佬主页下载新版本，或者自己修改chrome.exe插入导入文件。</p>
+</li>
+<li>
+<p>于是，依托GreenChrome启动的ChromeUpdateSharp便也不方便自动更新了。就这么稀里糊涂用了几个月，发现tsungkang大佬给ChromeUpdateSharp重新加回了SetDll自动插入绿色化DLL的功能，但是测试了下，并不认识新插件Chrome++，只认识GreenChrome，但是GreenChrome已经用不了了，没办法，那我试试想办法，让ChromeUpdateSharp认识认识新插件？</p>
+</li>
+</ul>
+<p><strong>修改前：Chrome++已放，提示未识别到修改前：Chrome++已放，提示未识别到</strong><br>
+<img src="https://www.yan-me.top/post-images/1616082446787.png" alt="" loading="lazy"></p>
+<p><strong>修改后：认识到了Chrome++，自动改名，更新chrome后后，自动修改chrome.exe并插入Chrome++的插件DLL</strong><br>
+<img src="https://www.yan-me.top/post-images/1616082454630.png" alt="" loading="lazy"></p>
+<ul>
+<li>虽然自动更新能力还是因为Chrome++没有启动功能而无法使用，但是最起码，现在能点一下更新便能自动做出绿色版了不是？感谢大佬手下留情，留了这么个功能。</li>
+</ul>
+<p>链接: <a href="https://pan.baidu.com/s/1WltmXcl2gTdSrrAnny3tsA" title="pan.baidu.com/s/1WltmXcl2gTdSrrAnny3tsA">pan.baidu.com/s/1WltmXcl2gTdSrrAnny3tsA</a> 提取码: <em>5ykd</em> 复制这段内容后打开百度网盘手机App，操作更方便哦</p>
+<p><em>注意，ChromeUpdateSharp只有更新行为才能触发插入DLL，建议把chrome.exe删了重新更新。Chrome++只改了1.2.1版本，抛砖引玉（其实修改的地方超乎想象的简单？）</em></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《呐，Win10不需要什么调整就已经很好用了呢》还我性能篇]]></title>
+        <id>https://www.yan-me.top/1iVmZrEVgX3Dr/</id>
+        <link href="https://www.yan-me.top/1iVmZrEVgX3Dr/">
+        </link>
+        <updated>2020-07-14T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>本篇提供了一种纯手动的，看起来很纯净的优化方式</strong></p>
+<p>毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执<br>
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>本篇提供了一种纯手动的，看起来很纯净的优化方式</strong></p>
+<p>毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执<br>
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式</p>
+<!-- more -->
+<hr>
+<ul>
+<li>
+<h5 id="关掉叠瓦硬盘的噩梦不知道为啥遥测技术要疯狂扫盘">关掉叠瓦硬盘的噩梦，不知道为啥遥测技术要疯狂扫盘</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="http://superuser.com/questions/1228234/windows-storport-spinning-up-offline-drives-every-65-minutes" title="Stack Exchange">Stack Exchange</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
+&quot;TelemetryPerformanceEnabled&quot;=dword:00000000
+&quot;TelemetryErrorDataEnabled&quot;=dword:00000000
+&quot;TelemetryDeviceHealthEnabled&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉幽灵熔断僵尸-负优化-吸牙膏技术-减速补丁">关掉幽灵/熔断/僵尸 负优化 吸牙膏技术 减速补丁</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/58701.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+&quot;FeatureSettingsOverride&quot;=dword:00000003
+&quot;FeatureSettingsOverrideMask&quot;=dword:00000003
+</code></pre>
+<ul>
+<li>
+<h5 id="打开不知道啥时候又来了个事务扩展技术">打开不知道啥时候又来了个事务扩展技术</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/66939.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+&quot;DisableTsx&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉内存页压缩">关掉内存页压缩</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.chiphell.com/thread-1960127-1-1.html" title="chiphell">chiphell</a></p>
+</blockquote>
+<pre><code>powershell
+Disable-MMAgent -mc
+Get-MMAgent
+</code></pre>
+<ul>
+<li>
+<h5 id="禁用-ntfs-分区上的-83-文件名创建">禁用 NTFS 分区上的 8.3 文件名创建</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions" title="Windows 支持">Windows 支持</a></p>
+</blockquote>
+<pre><code>powershell
+fsutil.exe 8dot3name set 1
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉-疯卡小文件的defender组件包">关掉 疯卡小文件的Defender组件包</h5>
+</li>
+</ul>
+<blockquote>
+<p>整个组件被关掉了肯定起不来，但仅仅关闭掉软件可说不准</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-Default-Definitions
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-ApplicationGuard
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不打开传统组件呢">为什么不打开传统组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不玩老Dx游戏了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Enable-Feature /FeatureName:LegacyComponents
+DISM.exe /online /Enable-Feature /FeatureName:DirectPlay
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不安装一下net35组件呢">为什么不安装一下Net3.5组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不用老软件了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Add-Package /PackagePath:&quot;安装光盘盘符例如E:\sources\sxs&quot;
+DISM.exe /online /Enable-Feature /FeatureName:NetFx3
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows File Recovery | 巨硬官方免费数据恢复工具 | winfr 绿色 独立 提取 免安装版]]></title>
+        <id>https://www.yan-me.top/P9lhm6mzHl1Ja/</id>
+        <link href="https://www.yan-me.top/P9lhm6mzHl1Ja/">
+        </link>
+        <updated>2020-07-05T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>不知道的先补一下知识，这是近期微软官方出品，</strong><br>
+<strong>使用命令行，完全免费的数据恢复软件，上架在微软商店。</strong><br>
+<s>为什么又是商店呢</s></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>不知道的先补一下知识，这是近期微软官方出品，</strong><br>
+<strong>使用命令行，完全免费的数据恢复软件，上架在微软商店。</strong><br>
+<s>为什么又是商店呢</s></p>
+<!-- more -->
+<hr>
+<p>众所周知，微软现在啥都往商店放，就像在拉扯长不大的孩子<br>
+众所也周知，LTSC、LTSB版，没商店。装不了商店的东西</p>
+<p>得，那就下回来提取嘛。拆开一看，纯血VC程序，打包了上架商店而已。甚至VC库都打包好了？<br>
+试了下能运行，能运行就是能用，嗯。就是</p>
+<p>下回去扔你的Path目录就行了。不是最新2004系统也能打开嘛</p>
+<p>试着扫了下，有反应，似乎、我也没试，睡了</p>
+<p>链接: https://pan.baidu.com/s/1NJh4J92Q82WH53rjv_ZwEQ 提取码: xwnr</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《我在装完英伟达驱动发现面板竟然不见了无可奈何决定去微软商店安装这件事是否搞错了什么》]]></title>
+        <id>https://www.yan-me.top/f2WDvwa9kmhon/</id>
+        <link href="https://www.yan-me.top/f2WDvwa9kmhon/">
+        </link>
+        <updated>2020-05-02T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>别翻百度看各种教你怎么去微软商店装面板的奇奇怪怪教程了，<br>
+又要改区又要网络，直接装个有原生Win32程序面板的驱动不完了么？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>别翻百度看各种教你怎么去微软商店装面板的奇奇怪怪教程了，<br>
+又要改区又要网络，直接装个有原生Win32程序面板的驱动不完了么？</p>
+<!-- more -->
+<hr>
+<p>有面板：<a href="https://www.nvidia.com/Download/find.aspx?lang=cn">https://www.nvidia.com/Download/find.aspx?lang=cn</a></p>
+<p>没面板：<a href="https://www.nvidia.com/Download/index.aspx?lang=cn">https://www.nvidia.com/Download/index.aspx?lang=cn</a></p>
+<p>也没面板：<a href="https://www.geforce.cn/drivers">https://www.geforce.cn/drivers</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[LTSB 2016 x64 高度精简版 | 基于 lopatkin 版二次删减 仅0.99G]]></title>
+        <id>https://www.yan-me.top/kvL4AutCYBOJX/</id>
+        <link href="https://www.yan-me.top/kvL4AutCYBOJX/">
+        </link>
+        <updated>2020-04-20T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>这是64位。基于毛子lopatkin的LIM版本二删，仅娱乐</p>
+<p>问题不管不顾不负责不会不知道 esd大小0.99G (压缩前wim约1.51G)</p>
+<p>恢复被精简的字体，恢复原版头像，恢复原版host文件</p>
+<p>二删保留了PowerShell，安装office不报错，别找了没图。我说可以</p>
+<p>塞了一堆优化注册表也开了一堆DISM++的优化，全是我习惯的优化</p>
+<p>没啥技术含量，都TM是供应商供的</p>
+<p>[图片]<br>
+https://cloud.189.cn/t/uUrAbemiMjee (访问码：z64q)</p>
+<p>见：WinX_LTSx_2016_2019文件夹下</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[改·U盘魔术师特别增强版v6 Plus | 44合1 增强型修改版 | 超大合盘 巨型 WinPE]]></title>
+        <id>https://www.yan-me.top/BZmjo5a7i9cTe/</id>
+        <link href="https://www.yan-me.top/BZmjo5a7i9cTe/">
+        </link>
+        <updated>2020-03-30T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>在原有14个PE的基础上，合盘增加了30个全网络知名PE(其中部分不是PE)</p>
+<p>基于版本为：USM_v6.0.2019.0131，在此对原作：系统总裁 表示感谢</p>
+<p>最终U盘占用体积：12G+ 具体原因以下解释</p>
+<p>其实思路很简单，x宝上，电子垃圾级U盘16G乃至更高的，完全可以很便宜搞定（保守点我说20以内吧）而且是可以通过量产扫描的真16G，不是无良扩容，但是速度很感人。这种电子垃圾做完PE后，剩余容量其实还不少。食之无味，弃之可惜，放重要数据？不放心。放系统？写出速度感人。能干啥呢，属实鸡肋。不如将全网大部分知名PE都合盘进来，一次写入，以后只要写出就完了。这种电子垃圾还有什么不能霍霍的呢？</p>
+<p>大部分与上次制作相同，可参考</p>
+<p>可自行更改美化message 文件</p>
+<p>这次增加了各PE大小（手写的）方便估计内存占用与加载时间</p>
+<p>还是那句话，没啥技术含量，就是复制粘贴顶多改改BCD文件改改Grub菜单和图</p>
+<p>这次是三个文件组成的分卷，注意看文件名</p>
+<p>度娘云：链接：https://pan.baidu.com/s/1bGLZ2I 密码：cg0n</p>
+<p>https://cloud.189.cn/t/uUrAbemiMjee (访问码：z64q)</p>
+<p>见：USM.Plus_v6.0.2019.0131_2020.3.29文件夹</p>
+<p>这两天天翼云送黄金，不去领一个嘛</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Win7 Thin PC Lite v3.5 | ThinPC 精简版 第三版 (仅 637 MB)]]></title>
+        <id>https://www.yan-me.top/gAiRnz9dHrIrQ/</id>
+        <link href="https://www.yan-me.top/gAiRnz9dHrIrQ/">
+        </link>
+        <updated>2020-03-04T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<p>Thin PC 是 Win7 的官方轻量级版本（官方精简版），安装内存仅需512M即可使用，这就给了很多古董一个安装并使用上Win7的机会</p>
+<p>正逢Win7停止更新，把当年精简的很多问题修一下（重新做一下）</p>
+<p>上回说好的完整版太大了懒得传，这次因为回家没带补丁包，所以，</p>
+<p>对比原版优势：</p>
+<pre><code>高度精简，wim文件仅600+mb，完全释放后2G以内，照顾古董
+
+原版为纯英语，按照网络教程，需要进入桌面后再安装语言包等
+
+默认集成中文，默认切换到中文，安装界面完全中文化，不突兀
+
+OOBE阶段默认中文与地区设置，完全砍掉多语言选择，一路next
+
+保证全安装过程与正常中文Win7一样的设置与习惯，完全熟悉感
+
+不影响常用功能安装，可更新补丁，可装新office，适合轻度用户
+</code></pre>
+<p>与上次制作相比:</p>
+<pre><code>保留了属性的完整显示，视觉更加标准正常，不再感觉少了啥
+
+保留了所有硬件支持与驱动，仅按照“啄木鸟驱动精简”删减
+
+保留了Aero效果和远程桌面支持，保留完整自带字体不再精简
+
+大部分精简范围按照v2版，除以上内容，请参照上次精简范围
+</code></pre>
+<p>https://cheetahmobile.lofter.com/post/1d440ddc_10982b65</p>
+<p>更新记录/已知问题：</p>
+<pre><code>2020-3-5 的新版本已修复首次安装进入黑屏问题，对白型用户更加友好，无需等待了。且包体积再次紧缩到600+以内，恢复极快。保留了上版本手滑删没了的xps viewer
+
+比上个版本保留了很多，所以体积大了一丢丢。不过上次有点极端，方向错了。毕竟，我相信再古董的电脑应该也不会差点磁盘吧？
+
+第一次安装进入桌面会黑屏，但能看到鼠标。别等了，直接按下Ctrl+Alt+Del选择注销，再点击账号头像登陆一次就没事了，我也没排查出到底为啥，不过仅安装后第一次进桌面需要，以后就正常了，所以也无所谓了不是~
+
+除了图片查看器是官方砍掉的，磁盘清理和磁盘整理之类的有第三方软件的，如果找不到，那就算我就删减了。谁爱用谁自己装一个好了。无足轻重。感知不强（三妹那边有看图王，请）
+
+如果是在OOBE阶段使用Shift+Ctrl+F3进入封装准备模式的封装爱好者，进入桌面后请更改语言格式和区域为中文\中国。具体位置为：控制面板\时钟语言区域\区域和语言
+
+系统不包含KMS等非法激活，仅用于体验小体积精简乐趣
+
+等我想到再写（想到了，写了 最新是2020年3月5日）
+当然小归小，装了VC库，o2k16都能用，能支持的都不会少~
+</code></pre>
+<p>https://cloud.189.cn/t/uUrAbemiMjee (访问码：z64q)</p>
+<p>见：ThinPC文件夹</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[护眼宝电脑版 护眼宝PC 绿色版 精简版 去资讯版 | EyePro Lite]]></title>
+        <id>https://www.yan-me.top/jCT31BuLnIOKb/</id>
+        <link href="https://www.yan-me.top/jCT31BuLnIOKb/">
+        </link>
+        <updated>2020-01-22T16:00:00.000Z</updated>
+        <content type="html"><![CDATA[<pre><code>夜班睡觉记得把屏幕开到适合睡觉的亮度，太刺眼了睡不好。为什么不关机？那你不怕一觉睡到天亮了吗？那让你上啥夜班。
+
+
+改前：
+</code></pre>
+<p>[图片]</p>
+<pre><code>改后：
+</code></pre>
+<p>[图片]<br>
+挑个适合自己的下载。从仅修改界面到删到只剩调光的版本，应有尽有</p>
+<p>链接: https://pan.baidu.com/s/17FGfDvWdZ3EV9FjpsoavqQ 提取码: wwcs</p>
+]]></content>
+    </entry>
+</feed>
