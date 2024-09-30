@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://www.yan-me.top</id>
+    <title>在自由而蔚蓝的天空下 | Yan-ME.ToP</title>
+    <updated>2024-09-30T07:50:08.265Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://www.yan-me.top"/>
+    <link rel="self" href="https://www.yan-me.top/atom.xml"/>
+    <logo>https://www.yan-me.top/images/avatar.png</logo>
+    <icon>https://www.yan-me.top/favicon.ico</icon>
+    <rights>All rights reserved 2024, 在自由而蔚蓝的天空下 | Yan-ME.ToP</rights>
+    <entry>
+        <title type="html"><![CDATA[大厂的用户网络诊断网页合集 在浏览器检测网络用]]></title>
+        <id>https://www.yan-me.top/DNHikNoRX57fl/</id>
+        <link href="https://www.yan-me.top/DNHikNoRX57fl/">
+        </link>
+        <updated>2024-09-30T07:37:21.000Z</updated>
+        <content type="html"><![CDATA[<p>网易易盾网络诊断工具<br>
+<a href="http://ping.dun.163.com/" title="http://ping.dun.163.com/">http://ping.dun.163.com/</a></p>
+<p>网易DNS检测工具<br>
+<a href="http://nstool.netease.com/" title="http://nstool.netease.com/">http://nstool.netease.com/</a></p>
+<p>腾讯云 - 华佗诊断分析系统<br>
+<a href="https://ping.huatuo.qq.com/;" title="https://ping.huatuo.qq.com/;">https://ping.huatuo.qq.com/;</a></p>
+<p>字节跳动网络诊断工具<br>
+<a href="https://diting.bytedance.com/" title="https://diting.bytedance.com/">https://diting.bytedance.com/</a></p>
+<p>字节跳动Lark网络诊断工具<br>
+<a href="https://diagnosis.bytedance.com/" title="https://diagnosis.bytedance.com/">https://diagnosis.bytedance.com/</a></p>
+<p>阿里昆仑用户诊断工具<br>
+<a href="https://cdn.dns-detect.alicdn.com/" title="https://cdn.dns-detect.alicdn.com/">https://cdn.dns-detect.alicdn.com/</a></p>
+<p>米哈游诊断工具<br>
+<a href="https://detect.mihoyo.com/" title="https://detect.mihoyo.com/">https://detect.mihoyo.com/</a></p>
+<p>唱吧网络诊断工具<br>
+<a href="http://a.changbaops.com/" title="http://a.changbaops.com/">http://a.changbaops.com/</a></p>
+<p>哔哩哔哩 - 网络诊断<br>
+<a href="https://www.bilibili.com/blackboard/diagnostics.html" title="https://www.bilibili.com/blackboard/diagnostics.html">https://www.bilibili.com/blackboard/diagnostics.html</a></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[咖啡壶（Chemex）ICT 资产管理系统 - 懒人快速部署包 | Windows下免安装环境 解压一键部署咖啡壶]]></title>
+        <id>https://www.yan-me.top/xKsfJMGe5ci8a/</id>
+        <link href="https://www.yan-me.top/xKsfJMGe5ci8a/">
+        </link>
+        <updated>2024-08-13T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>咖啡壶（Chemex）是一个 Laravel 框架的 轻量的、现代设计风格的 ICT 资产管理系统，</p>
+<p>官方安装说明里给出了 Docker部署 和 手动部署 两种方式。但是很多时候干活地方从表格手写飞升到需要资产台账管理系统，倒也不会给我时间安装docker安装数据库拉取镜像，但是手动部署也需要安装一堆web环境软件并做好配置同样需要不少时间精力。</p>
+<p>网上的部署教程基本都是在linux下拉取项目部署，或者是docker下运行。再或者是宝塔一类的面板下再部署。都还算有点上手门槛</p>
+<p>我希望能有更轻松一点的部署，类似于Discuz!的ComsenzEXP社区产品体验安装包。或者phpStudy小皮面板，XAMPP，宝塔Windows面板 之类，这样的一键web环境部署软件，自带了需要的PHP，MySQL，Nginx三件套并做好设置，Windows系统下直接启动即可。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>咖啡壶（Chemex）是一个 Laravel 框架的 轻量的、现代设计风格的 ICT 资产管理系统，</p>
+<p>官方安装说明里给出了 Docker部署 和 手动部署 两种方式。但是很多时候干活地方从表格手写飞升到需要资产台账管理系统，倒也不会给我时间安装docker安装数据库拉取镜像，但是手动部署也需要安装一堆web环境软件并做好配置同样需要不少时间精力。</p>
+<p>网上的部署教程基本都是在linux下拉取项目部署，或者是docker下运行。再或者是宝塔一类的面板下再部署。都还算有点上手门槛</p>
+<p>我希望能有更轻松一点的部署，类似于Discuz!的ComsenzEXP社区产品体验安装包。或者phpStudy小皮面板，XAMPP，宝塔Windows面板 之类，这样的一键web环境部署软件，自带了需要的PHP，MySQL，Nginx三件套并做好设置，Windows系统下直接启动即可。</p>
+<!-- more -->
+<p>所以我做出了这个，更方便部署使用的，Windows系统下 一键咖啡壶 懒人快速部署包</p>
+<p>就像那些一键环境部署的软件们一样，这个压缩包里自带了PHP，MySQL，Nginx三件套，并做好了设置。也包括了一份拉取好的Chemex项目，并按照文档，联网安装完了所需要的依赖。至少目前不需要再联网下载什么了。</p>
+<p>现在只需要在一台普通，干净的电脑上，运行自解压包。跟着向导，解压到指定位置，就可以一键启动环境，并帮你完成部署咖啡壶Chemex。自解压包会自动帮你解压到D盘的Chemex_OK目录，只需要在解压并初始化完成后，在桌面上打开一键咖啡壶启动器，即可使用</p>
+<p>菜单的左上角按钮点击一下，即可快速启动PHP，MySQL，Nginx三件套环境。右下角启动网页可以帮你快速访问Chemex的管理页面。此时，同网络下的其他设备也可以在浏览器输入这台电脑的IP来访问刚才一键部署完成的Chemex的管理页面。</p>
+<p>注意如果你的公司管理严格，明令禁止在内网私搭乱建开启web服务，请不要冒险使用这个一键环境</p>
+<p>如果需要更改存放位置，请打开 一键咖啡壶启动器 然后按照其他说明 中的指示进行操作<br>
+更多内容也可以阅读启动器上的滚动说明来了解</p>
+<p>链接: https://pan.baidu.com/s/1xyFbvRSW7tkKmaoP9d1gDw?pwd=st5g 提取码: st5g 复制这段内容后打开百度网盘手机App，操作更方便哦</p>
+<p>https://www.123pan.com/s/OfsSVv-DYEW3?提取码:ItTh</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[整理目前手搓的所有Windows安装映像，的完整补丁版和精简版。包括Win10和Win7，的各版本]]></title>
+        <id>https://www.yan-me.top/win/</id>
+        <link href="https://www.yan-me.top/win/">
+        </link>
+        <updated>2024-01-03T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<ul>
+<li>
+<p>包括了Win10的各个经典版本，Win7的专业旗舰企业三大版本，和对应的完整补丁和精简版。根据需要去网盘按提供的名称查找下载即可。天翼云盘下载基本不限速，很好用</p>
+</li>
+<li>
+<p>所有版本均不包括非法激活，请自行处理。所有精简版均有加入部分优化，不爱用也没办法，我爱用。</p>
+</li>
+<li>
+<p>确认停更的版本均已打包为ISO文件，wim版请自行使用第三方安装器安装，或自行压入ISO然后安装。</p>
+</li>
+</ul>
+]]></summary>
+        <content type="html"><![CDATA[<ul>
+<li>
+<p>包括了Win10的各个经典版本，Win7的专业旗舰企业三大版本，和对应的完整补丁和精简版。根据需要去网盘按提供的名称查找下载即可。天翼云盘下载基本不限速，很好用</p>
+</li>
+<li>
+<p>所有版本均不包括非法激活，请自行处理。所有精简版均有加入部分优化，不爱用也没办法，我爱用。</p>
+</li>
+<li>
+<p>确认停更的版本均已打包为ISO文件，wim版请自行使用第三方安装器安装，或自行压入ISO然后安装。</p>
+</li>
+</ul>
+<!-- more -->
+<h5 id="网盘见httpscloud189cntuurabemimjee-访问码z64q"><strong>网盘见：<a href="https://cloud.189.cn/t/uUrAbemiMjee" title="https://cloud.189.cn/t/uUrAbemiMjee">https://cloud.189.cn/t/uUrAbemiMjee</a> (访问码：z64q)</strong></h5>
+<hr>
+<ul>
+<li>
+<h3 id="win10系列-完整补丁-ltsc2021-最新至-2023年12月">Win10系列 完整补丁 LTSC2021 最新至 <em>2023年12月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>仅添加制作月份发布的补丁，保证最小改动情况下更新至最新</p>
+</blockquote>
+<blockquote>
+<p>基于Win10 LTSC2021离线添加截止2023.12所有更新，补全官方丢失的VCLibs桥库和HEVC解码库，补全NET3.5库，其余均保持原样。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">LTSC2021x64_2023.12_19044.3803.wim</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">LTSC 2021</td>
+<td style="text-align:center">半年/一年</td>
+<td style="text-align:center">5.60 GB GB</td>
+<td style="text-align:center">ABF424FD</td>
+</tr>
+<tr>
+<td style="text-align:center">LTSC2021x86_2023.12_19044.3803.wim</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">LTSC 2021</td>
+<td style="text-align:center">半年/一年</td>
+<td style="text-align:center">3.69 GB GB</td>
+<td style="text-align:center">964098A4</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win10系列-完整补丁-ltsc2019-最新至-2023年12月">Win10系列 完整补丁 LTSC2019 最新至 <em>2023年12月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>仅添加制作月份发布的补丁，保证最小改动情况下更新至最新</p>
+</blockquote>
+<blockquote>
+<p>基于Win10 LTSC2019离线添加截止2023.12所有更新，补全HEVC解码库，补全NET3.5库，其余均保持原样。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">LTSC2019x64_2023.12_17763.5206.wim</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">LTSC 2019</td>
+<td style="text-align:center">半年/一年</td>
+<td style="text-align:center">5.19 GB</td>
+<td style="text-align:center">B997B009</td>
+</tr>
+<tr>
+<td style="text-align:center">LTSC2019x86_2023.12_17763.5206.wim</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">LTSC 2019</td>
+<td style="text-align:center">半年/一年</td>
+<td style="text-align:center">3.38 GB</td>
+<td style="text-align:center">CC750E0D</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win10系列-精简版-1909-专业工作站-最新至-2023年3月">Win10系列 精简版 1909 专业工作站 最新至 <em>2023年3月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>基于已经停更的Win10 1909专业工作站版本 补全停更后所有更新，补全HEVC解码库，补全NET3.5库，再精简。只建议用于纯上网刷网页用途的家用安装。删除所有无用组件，超低占用。自行关闭更新功能即可。没有稳定性保证 没有功能保证</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">L_Win10_PW1909_x64_DVD.iso</td>
+<td style="text-align:center">完整补丁后精简</td>
+<td style="text-align:center">Win10 1909</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">2.70 GB</td>
+<td style="text-align:center">02B0CB29</td>
+</tr>
+<tr>
+<td style="text-align:center">L_Win10_PW1909_x86_DVD.iso</td>
+<td style="text-align:center">完整补丁后精简</td>
+<td style="text-align:center">Win10 1909</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">1.84 GB</td>
+<td style="text-align:center">AD89897E</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win10系列-精简版-ltsb2016-最新至-2023年3月">Win10系列 精简版 LTSB2016 最新至 <em>2023年3月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>基于lopatkin版本直接二次精简。体积小到可以装进14G的傲腾固态里面。只建议用于纯上网刷网页用途的家用安装。删除所有无用组件，超低占用。自行关闭更新功能即可。没有稳定性保证 没有功能保证</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">L_Win10_LTSB2016_x64_DVD.iso</td>
+<td style="text-align:center">直接精简</td>
+<td style="text-align:center">LTSB2016</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">1.79 GB</td>
+<td style="text-align:center">0663F9EE</td>
+</tr>
+<tr>
+<td style="text-align:center">L_Win10_LTSB2016_x86_DVD.iso</td>
+<td style="text-align:center">直接精简</td>
+<td style="text-align:center">LTSB2016</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">1.24 GB</td>
+<td style="text-align:center">C871B7E3</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win7系列-完整补丁-专业旗舰企业三合一-esu补丁-最新至-2023年3月">Win7系列 完整补丁 专业旗舰企业三合一 + ESU补丁 最新至 <em>2023年3月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>基于UpdatePack7R2_23.2.15补丁包补全+自己手动整理部分，添加截止Win7ESU更新结束的所有补丁，其余均保持原样。（补丁包有添加ESU更新破解，所以这个实际上不算原汁原味的了）（补丁包未添加部分无意义补丁，已经验证过这部分其余补丁以外，均手动整理添加了。减少各种管家卫士乱提醒）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ESU_Win7_3in1_x64_DVD.iso</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">Win7 SP1</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">3.91 GB</td>
+<td style="text-align:center">ACF66A13</td>
+</tr>
+<tr>
+<td style="text-align:center">ESU_Win7_3in1_x86_DVD.iso</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">Win7 SP1</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">2.94 GB</td>
+<td style="text-align:center">43A96149</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win7系列-完整补丁-专业旗舰企业三合一-最新至-2020年1月">Win7系列 完整补丁 专业旗舰企业三合一  最新至 <em>2020年1月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>完全手动整理，离线添加 截止2020年1月停止更新的所有出现过的补丁，其余均保持原样。手动验证可以通过WU和各种管家卫士更新检测，理论上没遗漏（检测错误的乱七八糟补丁除外）收集补丁包括：</p>
+</blockquote>
+<blockquote>
+<p>2016.5 发布的所有补丁大汇总<br>
+2016.8 前 发布的每月零碎补丁<br>
+2016.8~2020.1 发布的每月仅安全更新、月度汇总更新，IE功能与安全更新、.NET更新<br>
+2016.8~2020.1 同步发布的每月非强制的每月数字结尾补丁（一般是堆栈更新、非强制的功能型更新、或者是给每月更新制造出的问题擦屁股的更新）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Ended_Win7_3in1_x64_DVD.iso</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">Win7 SP1</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">3.92 GB</td>
+<td style="text-align:center">861649C0</td>
+</tr>
+<tr>
+<td style="text-align:center">Ended_Win7_3in1_x86_DVD.iso</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">Win7 SP1</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">2.78 GB</td>
+<td style="text-align:center">639CF440</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win7系列-完整补丁-windows-thin-pc-最新至-2023年3月">Win7系列 完整补丁 Windows Thin PC 最新至 <em>2023年3月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>Windows Thin PC本质为基于无中文的嵌入式版本的官方特供版本。手动补全中文后切换默认语言，然后再基于UpdatePack7R2_23.2.15补丁包补全+自己手动整理部分，添加截止Win7ESU更新结束的所有补丁，其余均保持原样。（补丁包有添加ESU更新破解，所以这个实际上不算原汁原味的了）（补丁包未添加部分无意义补丁，已经验证过这部分其余补丁以外，均手动整理添加了。减少各种管家卫士乱提醒）</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">ESU_Win7_TPC_x86.wim</td>
+<td style="text-align:center">完整补丁</td>
+<td style="text-align:center">Win7 Embedded</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">1.43 GB</td>
+<td style="text-align:center">96F268E6</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<ul>
+<li>
+<h3 id="win7系列-精简版-windows-thin-pc-最新至-2023年3月">Win7系列 精简版 Windows Thin PC 最新至 <em>2023年3月</em></h3>
+</li>
+</ul>
+<blockquote>
+<p>补全中文后精简多语言，测试占用极低，可用于古董老爷机体验Win7用。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">文件</th>
+<th style="text-align:center">制作方向</th>
+<th style="text-align:center">基版</th>
+<th style="text-align:center">上传频次</th>
+<th style="text-align:center">大小</th>
+<th style="text-align:center">CRC32</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Win7_TPCLite_x86.wim</td>
+<td style="text-align:center">直接精简</td>
+<td style="text-align:center">Win7 Embedded</td>
+<td style="text-align:center">正常不再更新</td>
+<td style="text-align:center">635 MB</td>
+<td style="text-align:center">EFC28D85</td>
+</tr>
+</tbody>
+</table>
+<hr>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[自用 360极速浏览器 13.0.2310.0 绿色特别版MOD | 可能是如今最适合公司的浏览器了]]></title>
+        <id>https://www.yan-me.top/3TzYl3UNhZwwK/</id>
+        <link href="https://www.yan-me.top/3TzYl3UNhZwwK/">
+        </link>
+        <updated>2022-05-09T14:24:35.000Z</updated>
+        <summary type="html"><![CDATA[<p>众所周知，因为各种历史遗留原因，各公司自有OA系统，就是纯纯的折磨人的货，需要足够的高端工程师经验，对浏览器进行各种设置才能勉强兼容，在这个本该是网页去兼容浏览器的年代，令人感叹</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>众所周知，因为各种历史遗留原因，各公司自有OA系统，就是纯纯的折磨人的货，需要足够的高端工程师经验，对浏览器进行各种设置才能勉强兼容，在这个本该是网页去兼容浏览器的年代，令人感叹</p>
+<!-- more -->
+<p>正巧赶上Flash停更，Adobe抱着烂钱大恰特恰，诱导下载国产广告版本，折磨运维，IE停更，疯狂弹窗诱导用户上Edge，然后不兼容OA，继续折磨运维，各大公司重金定制的OA系统，却死守IE+Flash+古董版本Java三件套不放手，不能开箱即用？用了Chrome就不能调Java？要来来回回切浏览器？找运维去吧。令人感叹</p>
+<p>这时候对各大OA兼容性最好的居然是<br>
+各大运维骂的最厉害的360家，的360极速浏览器，不由得令人感慨</p>
+<p>不扯了</p>
+<p>基于 360极速浏览器 13版最后一个版本（其实最新也没啥，强迫症）13.0.2310.0定制<br>
+简简单单删了下浏览器医生，升级反馈，游戏盒子。<br>
+按照360极速浏览器12版的目录解构加入了darktohka版的Flash国内版34.0.0.231，<br>
+不用额外安装Flash了。Windows都推补丁删掉的玩意，就别单独装了。<br>
+如果版权限制严格，或对第三方修改版害怕，或一定要原汁原味，可以找到：<br>
+components\ppflash\ppflash.7z解压覆盖回去。就是提取自360极速浏览器12版的，<br>
+真原汁原味，来自360提供的Flash29版本了。最后简简单单使用GreenChrome插件<br>
+重定向用户目录（其实解压出来就是绿色版，用户目录默认就重定向了。加个插件保险一点）</p>
+<p>如果需要在公司内分发，直接启动浏览器，设置好书签，浏览器首页，改好设置。连带用户目录一起打包好，分发给用户就行。心情好可以再设置设置哪些网页用Chrome核，哪些网页用IE核，帮用户安装一些浏览器插件，让用户日常使用更顺畅一些。所以我定性这是一个MOD，你可以自己随心去改</p>
+<p>用了一个自解压，以防某些连压缩软件都没装的奇妙电脑<br>
+为什么不用原版安装包？原版默认安装到用户目录，太不方便了。就这么简单</p>
+<p>链接：https://pan.baidu.com/s/1tcF9yLg2_cpBwSzkf3eRvA?pwd=bq15<br>
+提取码：bq15</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gnirehtet辅助小工具 电脑网络反向共享给手机工具Gnirehtet的，一个手动搓制界面（伪]]></title>
+        <id>https://www.yan-me.top/EyN4JOYhiKTbU/</id>
+        <link href="https://www.yan-me.top/EyN4JOYhiKTbU/">
+        </link>
+        <updated>2022-01-23T18:42:50.000Z</updated>
+        <summary type="html"><![CDATA[<p>Gnirehtet 是一个可以将电脑的网络，通过数据线反向共享给手机的一个工具，<br>
+在手机安装配套工具后，可以让手机用上电脑的网络，节约流量，降低延迟等。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>Gnirehtet 是一个可以将电脑的网络，通过数据线反向共享给手机的一个工具，<br>
+在手机安装配套工具后，可以让手机用上电脑的网络，节约流量，降低延迟等。</p>
+<!-- more -->
+<p>很适合公司没有公用WIFI信号，电脑又不方便摸鱼，的时候摸鱼？<br>
+<img src="https://www.yan-me.top/post-images/1642963680157.png" alt="" loading="lazy"><br>
+所以，我这个是 Gnirehtet 的一个，<br>
+也不算图形吧，准确说算是辅助使用工具？<br>
+<img src="https://www.yan-me.top/post-images/1642963684411.png" alt="" loading="lazy"><br>
+首先，刷机大佬除外（<br>
+原版需要用adb，要adb就得找。又要搞定adb驱动安装，网上的驱动，不知道有没有自己设备的ID，<br>
+现在电脑里有各种自带adb的商业软件虎视眈眈，就等着你手机接上。然后弹窗告诉你，手机接上来啦。</p>
+<p>adb端口被占这问题，我塞了一个Cofface大佬编译的adb就行。大佬的adb详细说明可以去大佬主页看。</p>
+<p>然后是Gnirehtet，使用时候经常遇到我也不知道是进程残留？还是？反正经常遇到错误，去任务管理器<br>
+关一下就正常。很不优雅的。搓个脚本？方便也不优雅阿，而且原版使用时候也是一个黑框？不要的话，<br>
+想隐藏运行cmd？很多朋友会说：隐藏运行cmd很简单啊，这样这样。是的，我也会，可我这时又想看呢？<br>
+也喜欢看黑框里字符跳动阿，更何况，我有时还得看看报错呢（</p>
+<p>所以，我想要一个 方便用、起码有按钮、有adb、可以帮着装adb驱动、可以看见命令、也可以缩到托盘、<br>
+尽量少闪黑框不方便摸鱼、还能一键干残留进程、的辅助。可以的话带点炫酷效果。但我不会做软件阿，</p>
+<p>所以，我使用aardio这款软件，拼凑了几个范例。于是乎，这个玩意就出来了。</p>
+<p>2、下面才是真使用介绍：</p>
+<p>首先需要一根数据线，一个正常上网的电脑，和，你的手机。手机需要打开 开发者选项\USB调试选项。</p>
+<p>MIUI设备需要额外打开USB安装和USB调试（安全设置）选项。</p>
+<p>来到软件界面。如果是有需要显示在黑框里的，点击完会把命令显示在下面输入栏，但是不需要手动点击运行。<br>
+除非特殊情况，你需要再次运行一遍。一是，显示出来方便学习。二是，这是范例带的，我觉得挺好，就没删</p>
+<p>3、菜单说明：</p>
+<p>一键操作<br>
+在熟悉使用后可以直接使用一键操作。一键上网可以快速清理相关进程然后启用工具，让手机上网，<br>
+一键断开可以一键的关闭手机端软件和本机残留进程，恢复手机网络，不然需要在手机上手动关闭</p>
+<p>准备上网<br>
+用于在第一次使用时候，向导性质的帮你安装adb驱动，使用devices命令检查手机是否连接，手机端软件是否安装，<br>
+手机端软件是否正常的安装完成这些检查。（如果返回包名称：package:com.genymobile.gnirehtet就是装好了）</p>
+<p>原味驱动<br>
+收集了 华、米、O、V、 国内四大品牌的原厂驱动安装包，都是从官方的助手或者官方的刷机工具\升级助手里提取的。<br>
+可以替代准备上网的菜单内Google驱动菜单，直接在这装原厂的adb驱动。当然，我手上只有个红米，剩下的没试过（雾</p>
+<p>其他命令<br>
+除了自动清屏是开关，向下三个菜单，都是是一键停止是看名字就懂的，剩下都是Gnirehtet自带但是我做到别的地方了，<br>
+或者不怎么很常用的命令，最起码对我来说不怎么常用，吧。但是也做上。万一哪天我发现其实挺重要的呢</p>
+<p>帮助关于<br>
+前俩个一看就懂，第三个是引流一波，卸载就是卸载手机端，安装汉化就是安装汉化的手机端。同时我还做了些修改，<br>
+方便国内网络环境下使用。具体说明点一下看看就知道了</p>
+<p>最后一个菜单，是引用说明。毕竟没啥技术含量却引用了很多，最起码留个链接方便指路，对吧</p>
+<p>至于想炫酷方面，我套范例还做了个Aero版。全局毛玻璃透明，炫酷拉风到浅色背景下看不清字。习惯可以换过去<br>
+工具都是用自解压打好包的，没有经常换电脑的，也可以手动右键解压到本地去使用。解压出来就是绿色版</p>
+<p>摸鱼愉快</p>
+<p>链接:https://pan.baidu.com/s/1cJW5tIBnnxuzsX_MSbaWnw?pwd=6dr6<br>
+提取码: 6dr6</p>
+<p>复制这段内容后打开百度网盘手机App，操作更方便哦</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[真•最终典藏 | 完整补丁版Win7 | 叠满塞爆 从发布到结束所有补丁 安装ISO | 全补丁Win7 x64+x86 专业+旗舰]]></title>
+        <id>https://www.yan-me.top/l9H56zV2Pne3Y/</id>
+        <link href="https://www.yan-me.top/l9H56zV2Pne3Y/">
+        </link>
+        <updated>2021-05-28T14:36:21.000Z</updated>
+        <summary type="html"><![CDATA[<h3 id="叠满塞爆-win7-从发布到结束所有补丁">叠满塞爆 Win7 从发布到结束所有补丁</h3>
+<blockquote>
+<p>💽真·最终典藏📀</p>
+</blockquote>
+<p><strong>使用dism离线处理，非后封。删除了cd手动安装功能（正经人谁插盘双击装系统啊？），保留了cd启动安装，可刻盘。单cd文件内包括了x64 的专业版+旗舰版和x86 的专业版+旗舰版。同时在次基础上制作了完整版和精简版，方便洁癖爱好者和充满妥协的使用者安装</strong></p>
+]]></summary>
+        <content type="html"><![CDATA[<h3 id="叠满塞爆-win7-从发布到结束所有补丁">叠满塞爆 Win7 从发布到结束所有补丁</h3>
+<blockquote>
+<p>💽真·最终典藏📀</p>
+</blockquote>
+<p><strong>使用dism离线处理，非后封。删除了cd手动安装功能（正经人谁插盘双击装系统啊？），保留了cd启动安装，可刻盘。单cd文件内包括了x64 的专业版+旗舰版和x86 的专业版+旗舰版。同时在次基础上制作了完整版和精简版，方便洁癖爱好者和充满妥协的使用者安装</strong></p>
+<!-- more -->
+<hr>
+<blockquote>
+<p><em><strong>特别说明，当前系统为研究打包，非后封装，不包括激活工具、激活码、推广软件、设置首页、等与Windows原版结构无关的东西。</strong></em></p>
+</blockquote>
+<h5 id="完整版塞进了自win7发布到去年截止几乎除了一个停止服务提示所有能找到的补丁包括">完整版塞进了自win7发布到去年截止（几乎，除了一个停止服务提示）所有能找到的补丁，包括：</h5>
+<ul>
+<li>2016.5 发布的所有补丁大汇总</li>
+<li>2016.8 前 发布的每月零碎补丁</li>
+<li>2016.8~2020.1 发布的每月仅安全更新、月度汇总更新，IE功能与安全更新、.NET更新</li>
+<li>同步发布的每月非强制的每月数字结尾补丁（一般是堆栈更新、非强制的功能型更新、或者是给每月更新制造出的问题擦屁股的更新）</li>
+</ul>
+<h3 id="x64x86-共计-133g-的补丁更新并清理了更新缓存">x64+x86 共计 <em>133G</em> 的补丁更新，并清理了更新缓存</h3>
+<h6 id="除此之外完整版中没动任何一项配置甚至一个示例图片超原汁原味">除此之外，完整版中没动任何一项配置，甚至一个示例图片，超原汁原味</h6>
+<blockquote>
+<p>因完全按照原版CD,光驱启动安装仅显示旗舰版。如要安装专业版，请使用第三方安装器读取install.wim或自己更改CD中的cfg文件</p>
+</blockquote>
+<h6 id="最终效果完整版">最终效果，完整版：</h6>
+<ul>
+<li>64位 单CD文件约 <em>4.1G</em>，比原版大了<em>0.92G</em>。包含专业版+旗舰版</li>
+<li>32位 单CD文件约 <em>2.85G</em>，比原版大了<em>0.38G</em>。包含专业版+旗舰版</li>
+</ul>
+<h6 id="精简版在以上基础上完全按照习惯删掉了各种我用不上的东西和部分驱动">精简版在以上基础上，完全按照习惯删掉了各种我用不上的东西，和部分驱动。</h6>
+<p>######大致精简列表和我的那个600m的win7差不多，同时再塞上各种优化。</p>
+<blockquote>
+<p>注，精简版不做任何保证，如有任何问题请安装完整版。因为精简问题，精简版与原版补丁数量并不一致，请勿惊慌</p>
+</blockquote>
+<h6 id="最终效果精简版">最终效果，精简版：</h6>
+<ul>
+<li>64位 单CD文件约 <em>2.45G</em>，比原版缩了<em>0.73G</em>。包含专业版+旗舰版</li>
+<li>32位 单CD文件约 <em>1.52G</em>，比原版大了<em>0.95G</em>。包含专业版+旗舰版</li>
+</ul>
+<p>https://cloud.189.cn/t/uUrAbemiMjee (访问码：z64q)</p>
+<p>见：Win7_全补丁终结 文件夹下</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《呐，Win10不需要什么调整就已经很好用了呢》还我性能篇]]></title>
+        <id>https://www.yan-me.top/1iVmZrEVgX3Dr/</id>
+        <link href="https://www.yan-me.top/1iVmZrEVgX3Dr/">
+        </link>
+        <updated>2020-07-14T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>本篇提供了一种纯手动的，看起来很纯净的优化方式</strong></p>
+<p>毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执<br>
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式</p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>本篇提供了一种纯手动的，看起来很纯净的优化方式</strong></p>
+<p>毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执<br>
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式</p>
+<!-- more -->
+<hr>
+<ul>
+<li>
+<h5 id="关掉叠瓦硬盘的噩梦不知道为啥遥测技术要疯狂扫盘">关掉叠瓦硬盘的噩梦，不知道为啥遥测技术要疯狂扫盘</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="http://superuser.com/questions/1228234/windows-storport-spinning-up-offline-drives-every-65-minutes" title="Stack Exchange">Stack Exchange</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
+&quot;TelemetryPerformanceEnabled&quot;=dword:00000000
+&quot;TelemetryErrorDataEnabled&quot;=dword:00000000
+&quot;TelemetryDeviceHealthEnabled&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉幽灵熔断僵尸-负优化-吸牙膏技术-减速补丁">关掉幽灵/熔断/僵尸 负优化 吸牙膏技术 减速补丁</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/58701.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+&quot;FeatureSettingsOverride&quot;=dword:00000003
+&quot;FeatureSettingsOverrideMask&quot;=dword:00000003
+</code></pre>
+<ul>
+<li>
+<h5 id="打开不知道啥时候又来了个事务扩展技术">打开不知道啥时候又来了个事务扩展技术</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/66939.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+&quot;DisableTsx&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉内存页压缩">关掉内存页压缩</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.chiphell.com/thread-1960127-1-1.html" title="chiphell">chiphell</a></p>
+</blockquote>
+<pre><code>powershell
+Disable-MMAgent -mc
+Get-MMAgent
+</code></pre>
+<ul>
+<li>
+<h5 id="禁用-ntfs-分区上的-83-文件名创建">禁用 NTFS 分区上的 8.3 文件名创建</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions" title="Windows 支持">Windows 支持</a></p>
+</blockquote>
+<pre><code>powershell
+fsutil.exe 8dot3name set 1
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉-疯卡小文件的defender组件包">关掉 疯卡小文件的Defender组件包</h5>
+</li>
+</ul>
+<blockquote>
+<p>整个组件被关掉了肯定起不来，但仅仅关闭掉软件可说不准</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-Default-Definitions
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-ApplicationGuard
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不打开传统组件呢">为什么不打开传统组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不玩老Dx游戏了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Enable-Feature /FeatureName:LegacyComponents
+DISM.exe /online /Enable-Feature /FeatureName:DirectPlay
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不安装一下net35组件呢">为什么不安装一下Net3.5组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不用老软件了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Add-Package /PackagePath:&quot;安装光盘盘符例如E:\sources\sxs&quot;
+DISM.exe /online /Enable-Feature /FeatureName:NetFx3
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows File Recovery | 巨硬官方免费数据恢复工具 | winfr 绿色 独立 提取 免安装版]]></title>
+        <id>https://www.yan-me.top/P9lhm6mzHl1Ja/</id>
+        <link href="https://www.yan-me.top/P9lhm6mzHl1Ja/">
+        </link>
+        <updated>2020-07-05T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p><strong>不知道的先补一下知识，这是近期微软官方出品，</strong><br>
+<strong>使用命令行，完全免费的数据恢复软件，上架在微软商店。</strong><br>
+<s>为什么又是商店呢</s></p>
+]]></summary>
+        <content type="html"><![CDATA[<p><strong>不知道的先补一下知识，这是近期微软官方出品，</strong><br>
+<strong>使用命令行，完全免费的数据恢复软件，上架在微软商店。</strong><br>
+<s>为什么又是商店呢</s></p>
+<!-- more -->
+<hr>
+<p>众所周知，微软现在啥都往商店放，就像在拉扯长不大的孩子<br>
+众所也周知，LTSC、LTSB版，没商店。装不了商店的东西</p>
+<p>得，那就下回来提取嘛。拆开一看，纯血VC程序，打包了上架商店而已。甚至VC库都打包好了？<br>
+试了下能运行，能运行就是能用，嗯。就是</p>
+<p>下回去扔你的Path目录就行了。不是最新2004系统也能打开嘛</p>
+<p>试着扫了下，有反应，似乎、我也没试，睡了</p>
+<p>链接: https://pan.baidu.com/s/1NJh4J92Q82WH53rjv_ZwEQ 提取码: xwnr</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《我在装完英伟达驱动发现面板竟然不见了无可奈何决定去微软商店安装这件事是否搞错了什么》]]></title>
+        <id>https://www.yan-me.top/f2WDvwa9kmhon/</id>
+        <link href="https://www.yan-me.top/f2WDvwa9kmhon/">
+        </link>
+        <updated>2020-05-02T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>英伟达驱动面板不见了,<br>
+别翻百度看各种教你怎么去微软商店装面板的奇奇怪怪教程了，<br>
+又要改区又要网络，直接装个有原生Win32程序面板的驱动不完了么？</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>英伟达驱动面板不见了,<br>
+别翻百度看各种教你怎么去微软商店装面板的奇奇怪怪教程了，<br>
+又要改区又要网络，直接装个有原生Win32程序面板的驱动不完了么？</p>
+<!-- more -->
+<hr>
+<p>有面板：<a href="https://www.nvidia.com/Download/find.aspx?lang=cn">https://www.nvidia.com/Download/find.aspx?lang=cn</a></p>
+<p>没面板：<a href="https://www.nvidia.com/Download/index.aspx?lang=cn">https://www.nvidia.com/Download/index.aspx?lang=cn</a></p>
+<p>也没面板：<a href="https://www.geforce.cn/drivers">https://www.geforce.cn/drivers</a></p>
+]]></content>
+    </entry>
+</feed>
