@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>新CPU在VMware Workstation Pro测试Win7时Bootloop，添加cpuid.1.ecx | 在自由而蔚蓝的天空下 | Yan-ME.ToP</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+
+<meta name="keywords" content="在自由而蔚蓝的天空下,Yan-ME,Yan-ME.TOP,Yan-ME.LOFTER.Com,Thin-PC,精简系统,WinPE合盘,ThinPC,Thin PC Lite" />
+<meta name="description" content="完全不知名的第三方修改软件玩家，修电脑的 | 所有内容均出于学习目的，使用互联网分享或分享内容衍生目的性组合。如发现问题将由发现者与相关搜索工具承担。" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.yan-me.top/favicon.ico?v=1770878269337">
+<link rel="stylesheet" href="https://www.yan-me.top/styles/main.css">
+
+
+
+<link href="https://gcore.jsdelivr.net/npm/animate.css@4/animate.min.css" rel="stylesheet">
+<style>
+:root {
+  --animate-duration: 800ms;
+}
+</style>
+<script src="https://testingcf.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+
+
+
+    <meta name="description" content="AI写的 cpuid.1.ecx = &quot;01110110110111000011001000001011&quot; 逐位完整解析
+
+
+一、 核心配置参数
+在虚拟机 .vmx 配置文件末尾添加以下指令：
+# 目标：AMD Zen ..." />
+    <meta name="keywords" content="" />
+    
+      <link href="https://quantil.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" rel="stylesheet">
+      <script src="https://fastly.jsdelivr.net/npm/katex@0.11.1/katex.min.js"></script>
+    
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container animate__animated animate__fadeInLeft">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://www.yan-me.top">
+        <img src="https://www.yan-me.top/images/avatar.png?v=1770878269337" class="site-logo">
+        <h1 class="site-title">在自由而蔚蓝的天空下 | Yan-ME.ToP</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container animate__animated animate__flipInX">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://open.gridea.dev/" target="_blank">Gridea</a> | Theme by <a href="https://github.com/xxxuuu/gridea-theme-autumn/tree/0b203f131d915cdb2a4f38ce02c152b464a0dd03" target="_blank">Autumn</a> | <a href="https://weibo.com/u/2400178611" target="_blank">Weibo</a> | <a href="https://space.bilibili.com/12796701" target="_blank">bilibili</a>
+<br>
+Pages by <a href="https://developers.cloudflare.com/pages/" target="_blank">Cloudflare Pages</a> | CDN by <a href="https://www.jsdelivr.com/network" target="_blank">jsDelivr</a> | <a class="rss" href="https://www.yan-me.top/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container animate__animated animate__fadeInUp">
+          <div class="post-detail">
+            <h2 class="post-title">新CPU在VMware Workstation Pro测试Win7时Bootloop，添加cpuid.1.ecx</h2>
+            <div class="post-date">2026-01-23 5th 12:00:00 AM&emsp;&emsp;716 字 &emsp;阅读时间 3 分钟</div>
+            
+              <div class="feature-container" style="background-image: url('https://www.yan-me.top/post-images/20260123.png')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>AI写的 cpuid.1.ecx = &quot;01110110110111000011001000001011&quot; 逐位完整解析</p>
+<!-- more -->
+<figure data-type="image" tabindex="1"><img src="https://www.yan-me.top/post-images/20260123.png" alt="" loading="lazy"></figure>
+<h2 id="一-核心配置参数">一、 核心配置参数</h2>
+<p>在虚拟机 <code>.vmx</code> 配置文件末尾添加以下指令：</p>
+<pre><code class="language-ini"># 目标：AMD Zen 5 架构适配 Windows 7 SP1 与 现代 PE 环境
+cpuid.1.ecx = &quot;01110110110111000011001000001011&quot;
+
+</code></pre>
+<hr>
+<h2 id="二-寄存器位序换算标准">二、 寄存器位序换算标准</h2>
+<p>VMware 的 CPUID 掩码通过 32 位二进制字符串定义，对应客体机（Guest OS）可见的硬件特性。</p>
+<ul>
+<li><strong>字符串方向</strong>：左起第 1 位（最高位，MSB）  左起第 32 位（最低位，LSB）。</li>
+<li><strong>物理对应</strong>：左起第 1 位 = <strong>Bit 31</strong>；左起第 32 位 = <strong>Bit 0</strong>。</li>
+<li><strong>定位公式</strong>：<code>左起位置 = 32 - Bit位序</code>。</li>
+<li><strong>取值逻辑</strong>：<code>1</code> = 开启/暴露特性；<code>0</code> = 屏蔽/隐藏特性。</li>
+</ul>
+<hr>
+<h2 id="三-关键有效位解析-bit-31-bit-0">三、 关键有效位解析 (Bit 31  Bit 0)</h2>
+<table>
+<thead>
+<tr>
+<th>左起位置</th>
+<th>Bit位序</th>
+<th>取值</th>
+<th>对应特性</th>
+<th>状态</th>
+<th>适配目的与作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>31</strong></td>
+<td><strong>0</strong></td>
+<td>Hypervisor</td>
+<td>屏蔽</td>
+<td>隐藏虚拟化层标志，规避 Windows 7 环境检测冲突。</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>28</strong></td>
+<td><strong>1</strong></td>
+<td>AVX 1.0</td>
+<td>开启</td>
+<td>保留基础矢量加速指令（需 KB2646155 补丁）。</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>27</strong></td>
+<td><strong>0</strong></td>
+<td><strong>OSXSAVE</strong></td>
+<td><strong>屏蔽</strong></td>
+<td><strong>防重启关键</strong>：阻止系统调用 Zen 5 扩展状态管理。</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>25</strong></td>
+<td><strong>1</strong></td>
+<td><strong>AES-NI</strong></td>
+<td>开启</td>
+<td>维持硬件加密性能，确保 PE 环境签名验证通过。</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>20</strong></td>
+<td><strong>1</strong></td>
+<td><strong>SSE 4.2</strong></td>
+<td>开启</td>
+<td><strong>防蓝屏关键</strong>：满足现代 PE 内核与驱动加载依赖。</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>19</strong></td>
+<td><strong>1</strong></td>
+<td><strong>SSE 4.1</strong></td>
+<td>开启</td>
+<td>保证现代软件及客体机驱动的指令集兼容性。</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>12</strong></td>
+<td><strong>0</strong></td>
+<td><strong>FMA3</strong></td>
+<td>屏蔽</td>
+<td>规避新架构高级浮点指令在旧版内核中的异常。</td>
+</tr>
+<tr>
+<td>23</td>
+<td><strong>9</strong></td>
+<td><strong>1</strong></td>
+<td>SSSE3</td>
+<td>开启</td>
+<td>维持多媒体及基础运算指令集支持。</td>
+</tr>
+<tr>
+<td>32</td>
+<td><strong>0</strong></td>
+<td><strong>1</strong></td>
+<td>SSE3</td>
+<td>开启</td>
+<td>Windows 7 x64 运行的最底层指令集需求。</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="四-核心技术结论">四、 核心技术结论</h2>
+<ol>
+<li><strong>引导稳定性 (Bit 27)</strong>：在 Zen 5 宿主机上运行 Windows 7，屏蔽 <strong>OSXSAVE</strong> 是防止内核初始化阶段因无法解析现代扩展寄存器状态而导致无限重启的唯一核心前置条件。</li>
+<li><strong>环境兼容性 (Bit 19/20/25)</strong>：开启 <strong>SSE 4.1/4.2</strong> 与 <strong>AES</strong> 指令集可有效解决基于 Windows 10/11 内核的 PE 系统在加载驱动程序或校验文件签名时触发的 <code>SYSTEM_SERVICE_EXCEPTION</code> 蓝屏故障。</li>
+<li><strong>配置原理</strong>：该掩码通过精简 CPU 暴露给客体机的特性位，将 9700X 伪装为具备 SSE4 和 AES 加速能力的“基础高性能 x64 处理器”，从而实现在不损失核心性能的前提下绕过架构代差导致的硬件抽象层冲突。</li>
+</ol>
+<hr>
+<h2 id="五-故障排查索引">五、 故障排查索引</h2>
+<table>
+<thead>
+<tr>
+<th>现象</th>
+<th>检查点</th>
+<th>修正操作</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>虚拟机启动报错</strong></td>
+<td>字符串长度</td>
+<td>确保 <code>cpuid.1.ecx</code> 值为 32 位，无多余空格或重复项。</td>
+</tr>
+<tr>
+<td><strong>Windows 7 循环重启</strong></td>
+<td>Bit 27</td>
+<td>确认左起第 5 位为 <code>0</code>。</td>
+</tr>
+<tr>
+<td><strong>PE 启动蓝屏</strong></td>
+<td>Bit 19/20</td>
+<td>确认左起第 12 位与 13 位为 <code>1</code>。</td>
+</tr>
+</tbody>
+</table>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://www.yan-me.top/20260112/">
+                  <h3 class="post-title">
+                    ChromeLinkerUP - 新代Chrome更新器 | 离线包地址查询 自动测速下载 自动制作便携版浏览器 自动安装Chrome++插件 纯配置文件驱动
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+        </div>
+      </div>
+
+    <script type="application/javascript">
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>

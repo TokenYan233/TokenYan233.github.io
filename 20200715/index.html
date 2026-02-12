@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>《呐，Win10不需要什么调整就已经很好用了呢》还我性能篇 | 在自由而蔚蓝的天空下 | Yan-ME.ToP</title>
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="renderer" content="webkit" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="format-detection" content="telephone=no, email=no, address=no">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<meta name="screen-orientation" content="portrait">
+<meta name="x5-orientation" content="portrait">
+<meta name="full-screen" content="yes">
+<meta name="x5-fullscreen" content="true">
+
+<meta name="keywords" content="在自由而蔚蓝的天空下,Yan-ME,Yan-ME.TOP,Yan-ME.LOFTER.Com,Thin-PC,精简系统,WinPE合盘,ThinPC,Thin PC Lite" />
+<meta name="description" content="完全不知名的第三方修改软件玩家，修电脑的 | 所有内容均出于学习目的，使用互联网分享或分享内容衍生目的性组合。如发现问题将由发现者与相关搜索工具承担。" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://www.yan-me.top/favicon.ico?v=1770878269337">
+<link rel="stylesheet" href="https://www.yan-me.top/styles/main.css">
+
+
+
+<link href="https://gcore.jsdelivr.net/npm/animate.css@4/animate.min.css" rel="stylesheet">
+<style>
+:root {
+  --animate-duration: 800ms;
+}
+</style>
+<script src="https://testingcf.jsdelivr.net/npm/vue@2/dist/vue.min.js"></script>
+
+
+
+    <meta name="description" content="本篇提供了一种纯手动的，看起来很纯净的优化方式
+毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式
+
+
+
+
+关掉叠瓦硬盘的噩梦，不知道为啥遥测技术要疯..." />
+    <meta name="keywords" content="" />
+    
+      <link href="https://quantil.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" rel="stylesheet">
+      <script src="https://fastly.jsdelivr.net/npm/katex@0.11.1/katex.min.js"></script>
+    
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container animate__animated animate__fadeInLeft">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://www.yan-me.top">
+        <img src="https://www.yan-me.top/images/avatar.png?v=1770878269337" class="site-logo">
+        <h1 class="site-title">在自由而蔚蓝的天空下 | Yan-ME.ToP</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container animate__animated animate__flipInX">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://open.gridea.dev/" target="_blank">Gridea</a> | Theme by <a href="https://github.com/xxxuuu/gridea-theme-autumn/tree/0b203f131d915cdb2a4f38ce02c152b464a0dd03" target="_blank">Autumn</a> | <a href="https://weibo.com/u/2400178611" target="_blank">Weibo</a> | <a href="https://space.bilibili.com/12796701" target="_blank">bilibili</a>
+<br>
+Pages by <a href="https://developers.cloudflare.com/pages/" target="_blank">Cloudflare Pages</a> | CDN by <a href="https://www.jsdelivr.com/network" target="_blank">jsDelivr</a> | <a class="rss" href="https://www.yan-me.top/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container animate__animated animate__fadeInUp">
+          <div class="post-detail">
+            <h2 class="post-title">《呐，Win10不需要什么调整就已经很好用了呢》还我性能篇</h2>
+            <div class="post-date">2020-07-15 3rd 12:00:00 AM&emsp;&emsp;443 字 &emsp;阅读时间 2 分钟</div>
+            
+            <div class="post-content" v-pre>
+              <p><strong>本篇提供了一种纯手动的，看起来很纯净的优化方式</strong></p>
+<p>毕竟我认为Win10没Win10吹们口中吹的那么好使，甚至难用而偏执<br>
+不过嘛，其实更多的是为了在不方便下载各种工具的情况下，更快速的优化方式</p>
+<!-- more -->
+<hr>
+<ul>
+<li>
+<h5 id="关掉叠瓦硬盘的噩梦不知道为啥遥测技术要疯狂扫盘">关掉叠瓦硬盘的噩梦，不知道为啥遥测技术要疯狂扫盘</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="http://superuser.com/questions/1228234/windows-storport-spinning-up-offline-drives-every-65-minutes" title="Stack Exchange">Stack Exchange</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\StorPort]
+&quot;TelemetryPerformanceEnabled&quot;=dword:00000000
+&quot;TelemetryErrorDataEnabled&quot;=dword:00000000
+&quot;TelemetryDeviceHealthEnabled&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉幽灵熔断僵尸-负优化-吸牙膏技术-减速补丁">关掉幽灵/熔断/僵尸 负优化 吸牙膏技术 减速补丁</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/58701.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Memory Management]
+&quot;FeatureSettingsOverride&quot;=dword:00000003
+&quot;FeatureSettingsOverrideMask&quot;=dword:00000003
+</code></pre>
+<ul>
+<li>
+<h5 id="打开不知道啥时候又来了个事务扩展技术">打开不知道啥时候又来了个事务扩展技术</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.landiannews.com/archives/66939.html" title="LanDianNews">LanDianNews</a></p>
+</blockquote>
+<pre><code>[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\kernel]
+&quot;DisableTsx&quot;=dword:00000000
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉内存页压缩">关掉内存页压缩</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://www.chiphell.com/thread-1960127-1-1.html" title="chiphell">chiphell</a></p>
+</blockquote>
+<pre><code>Get-MMAgent
+</code></pre>
+<blockquote>
+<p>ApplicationLaunchPrefetching : False<br>
+ApplicationPreLaunch         : True<br>
+MaxOperationAPIFiles         : 8192<br>
+MemoryCompression            : False<br>
+OperationAPI                 : True<br>
+PageCombining                : False<br>
+PSComputerName               :</p>
+</blockquote>
+<p>开关：Enable-MMAgent | Disable-MMAgent</p>
+<pre><code>ApplicationLaunchPrefetching：无法修改
+ApplicationPreLaunch：默认启用不修改 Enable-MMAgent -apl
+MaxOperationAPIFiles：最大值 Set-MMAgent -mo 8192
+MemoryCompression：关闭内存压缩 Disable-MMAgent -mc
+OperationAPI：无法修改
+PageCombining：关闭内存合并 Disable-MMAgent -pc
+</code></pre>
+<ul>
+<li>
+<h5 id="禁用-ntfs-分区上的-83-文件名创建">禁用 NTFS 分区上的 8.3 文件名创建</h5>
+</li>
+</ul>
+<blockquote>
+<p>来源：<a href="https://support.microsoft.com/en-us/help/121007/how-to-disable-8-3-file-name-creation-on-ntfs-partitions" title="Windows 支持">Windows 支持</a></p>
+</blockquote>
+<pre><code>powershell
+fsutil.exe 8dot3name set 1
+</code></pre>
+<ul>
+<li>
+<h5 id="关掉-疯卡小文件的defender组件包">关掉 疯卡小文件的Defender组件包</h5>
+</li>
+</ul>
+<blockquote>
+<p>整个组件被关掉了肯定起不来，但仅仅关闭掉软件可说不准</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-Default-Definitions
+DISM.exe /online /Disable-Feature /FeatureName:Windows-Defender-ApplicationGuard
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不打开传统组件呢">为什么不打开传统组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不玩老Dx游戏了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Enable-Feature /FeatureName:LegacyComponents
+DISM.exe /online /Enable-Feature /FeatureName:DirectPlay
+</code></pre>
+<ul>
+<li>
+<h5 id="为什么不安装一下net35组件呢">为什么不安装一下Net3.5组件呢？</h5>
+</li>
+</ul>
+<blockquote>
+<p>不用老软件了吗</p>
+</blockquote>
+<pre><code>powershell
+DISM.exe /online /Add-Package /PackagePath:&quot;安装光盘盘符例如E:\sources\sxs&quot;
+DISM.exe /online /Enable-Feature /FeatureName:NetFx3
+</code></pre>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://www.yan-me.top/W10LTSB2016L/">
+                  <h3 class="post-title">
+                    LTSB 2016 x64 高度精简版 | 基于 lopatkin 版二次删减 仅0.99G
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+        </div>
+      </div>
+
+    <script type="application/javascript">
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+  <script src="https://jsd.onmicrosoft.cn/gh/highlightjs/cdn-release@11/build/highlight.min.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad()
+  </script>
+
+
+
+
+
+  </body>
+</html>
