@@ -1,0 +1,5 @@
+# robots.txt
+User-agent: *
+Allow: /
+Disallow:
+Sitemap: https://www.yan-me.top/atom.xml

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪟</text></svg>">
+<title>NTLite 精简XML预设 字体备注器</title>
+<style>
+/* 引入现代系统级字体栈与 CSS 变量 */
+
+
+:root {
+ --bg-color: #f4f7f9;
+ --card-bg: #ffffff;
+ --text-main: #1e293b;
+ --text-muted: #64748b;
+ --primary-bg: #eff6ff;
+ --primary-border: #bfdbfe;
+ --primary-hover: #dbeafe;
+ --log-bg: #f8fafc;
+ --log-border: #e2e8f0;
+ --radius-lg: 24px;
+ --radius-md: 16px;
+}
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+	background: var(--bg-color);
+	color: var(--text-main);
+	padding: 5vh 20px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.container {
+	width: 100%;
+	max-width: 680px;
+	background: var(--card-bg);
+	padding: 40px;
+	border-radius: var(--radius-lg);
+	box-shadow: 0 20px 40px -15px rgba(0,0,0,0.05);
+	box-sizing: border-box;
+}
+h2 {
+	text-align: center;
+	color: #0f172a;
+	font-size: 26px;
+	font-weight: 700;
+	margin: 0 0 12px 0;
+	letter-spacing: -0.5px;
+}
+.desc {
+	font-size: 15px;
+	color: var(--text-muted);
+	text-align: center;
+	margin-bottom: 30px;
+	line-height: 1.6;
+}
+/* 现代化的大色块上传区 */
+.upload-btn-wrapper {
+	position: relative;
+	text-align: center;
+	margin: 30px 0;
+	background: var(--primary-bg);
+	border: 2px dashed var(--primary-border);
+	padding: 60px 20px;
+	border-radius: var(--radius-lg);
+	transition: all 0.3s ease;
+	cursor: pointer;
+}
+.upload-btn-wrapper:hover {
+	background: var(--primary-hover);
+	border-color: #93c5fd;
+	transform: translateY(-2px);
+}
+/* 隐藏原生极丑的 input，使其铺满作为透明点击层 */
+.upload-btn-wrapper input[type=file] {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	cursor: pointer;
+}
+/* 用 CSS 伪元素凭空生成漂亮的提示文字 */
+.upload-btn-wrapper::before {
+	content: '点击此处选择 XML 预设文件';
+	display: block;
+	font-size: 18px;
+	font-weight: 600;
+	color: #2563eb;
+	margin-bottom: 8px;
+}
+.upload-btn-wrapper::after {
+	content: '支持同时框选多个文件进行批量处理';
+	display: block;
+	font-size: 14px;
+	color: #60a5fa;
+}
+/* 浅色现代化阅读日志区 */
+#log {
+	margin-top: 30px;
+	padding: 20px;
+	background: var(--log-bg);
+	color: #334155;
+	border: 1px solid var(--log-border);
+	border-radius: var(--radius-md);
+	font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+	height: auto;
+	overflow-y: auto;
+	white-space: pre-wrap;
+	font-size: 14px;
+	line-height: 1.7;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);
+}
+
+        /* 优雅的自定义滚动条 */
+        #log::-webkit-scrollbar {
+width: 8px;
+}
+ #log::-webkit-scrollbar-track {
+background: transparent;
+}
+ #log::-webkit-scrollbar-thumb {
+background-color: #cbd5e1;
+border-radius: 10px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>NTLite 精简XML预设 字体备注器</h2>
+  <p class="desc">NTLite精简字体列表都是原名，我也不知道是啥还得挨个去查询这个字体是啥能不能删。那我搞个小玩意给每个字体精简项打个备注好了<br>
+    <b>备注后格式：[区域分类] 官方名称/通俗分类 粗细 (操作建议)</b><br>
+    <br><b>例如这样的：</b>&lt;c&gt;font_meiryobold 'Meiryo Bold &amp;amp; Meiryo Bold Italic &amp;amp; Meiryo UI Bold &amp;amp; Meiryo UI Bold Italic'&lt;/c&gt; &lt;!-- [日文字体] 微软明瞭体 粗体 (按需保留) --&gt; <b>就很明确知道是啥字体了 </b>无服务端，全静态。纯浏览器操作
+    <br><br>🪟<br><br>
+    操作方法：选择勾选了字体的XML精简预设上传<br>
+    页面自动帮你在精简列表中的字体后打上备注，说明字体用途和推荐<br>
+    最后，你在生成的新XML预设中 删除需要保留的字体，保存使用这个预设XML</p>
+  <div class="upload-btn-wrapper">
+    <input type="file" id="fileInput" multiple accept=".xml">
+  </div>
+  <div id="log">操作：等待选择 XML 文件 (可多选)...</div>
+</div>
+<script>
+        // 排版字典库
+        const fontDict = {
+            // === 系统底座 ===
+            "font_courier": "[系统基座] Courier 基础等宽 (绝对保留)",
+            "font_couriernew": "[系统基座] Courier New 终端等宽 (绝对保留)",
+            "font_fixed": "[系统基座] Fixed 基础固宽 (绝对保留)",
+            "font_oem": "[系统基座] OEM 终端显示 (绝对保留)",
+            "font_small": "[系统基座] Small 基础小字体 (绝对保留)",
+            "font_system": "[系统基座] System 基础系统 (绝对保留)",
+            "font_vector": "[系统基座] Vector 基础矢量 (绝对保留)",
+
+            // === 符号图标 ===
+            "font_holomd2": "[符号图标] Holo MDL2 Assets 混合现实资产 (可以精简)",
+            "font_hololens_mdl2_assets": "[符号图标] HoloLens MDL2 Assets 全息图形资产 (可以精简)",
+            "font_lucidasans": "[符号图标] Lucida Sans Unicode 全局核心符号 (绝对保留)",
+            "font_marlett": "[符号图标] Marlett 窗口控制符号 (绝对保留)",
+            "font_segoe_fluent_icons": "[符号图标] Segoe Fluent Icons 流畅设计图标 (建议保留)",
+            "font_segoe_mdl2_assets": "[符号图标] Segoe MDL2 Assets 现代UI组件图标 (建议保留)",
+            "font_symbol": "[符号图标] Symbol 经典数学符号 (建议保留)",
+            "font_webdings": "[符号图标] Webdings 网页图形符号 (绝对保留)",
+            "font_wingdings": "[符号图标] Wingdings 经典图形符号 (建议保留)",
+
+            // === 简体中文 ===
+            "font_dengxian": "[简体中文] 等线 (绝对保留)",
+            "font_simfang": "[简体中文] 仿宋 (建议保留)",
+            "font_fangsong": "[简体中文] 仿宋 (建议保留)",
+            "font_simkai": "[简体中文] 楷体 (建议保留)",
+            "font_kaiti": "[简体中文] 楷体 (建议保留)",
+            "font_microsoftyahei": "[简体中文] 微软雅黑 常规 (绝对保留)",
+            "font_microsoftyaheibold": "[简体中文] 微软雅黑 粗体 (绝对保留)",
+            "font_microsoftyaheilight": "[简体中文] 微软雅黑 细体 (绝对保留)",
+            "font_simhei": "[简体中文] 黑体 (绝对保留)",
+            "font_simsun": "[简体中文] 宋体与新宋体 (绝对保留)",
+            "font_simsunb": "[简体中文] 宋体扩展B区 (建议保留)",
+            "font_simsunextg": "[简体中文] 宋体扩展G区 (建议保留)",
+
+            // === 繁体中文 ===
+            "font_dfkaisb": "[繁体中文] 标楷体 (可以精简)",
+            "font_microsoftjhenghei": "[繁体中文] 微软正黑体 常规 (可以精简)",
+            "font_microsoftjhengheibold": "[繁体中文] 微软正黑体 粗体 (可以精简)",
+            "font_microsoftjhengheilight": "[繁体中文] 微软正黑体 细体 (可以精简)",
+            "font_mingliu": "[繁体中文] 细明体 (可以精简)",
+            "font_mingliub": "[繁体中文] 细明体扩展B区 (可以精简)",
+
+            // === 日韩字体 ===
+            "font_biz_udgothic": "[日文字体] BIZ UDGothic 商业无衬线 (可以精简)",
+            "font_biz_udmincho": "[日文字体] BIZ UDMincho 商业衬线 (可以精简)",
+            "font_meiryo": "[日文字体] 微软明瞭体 常规 (按需保留)",
+            "font_meiryobold": "[日文字体] 微软明瞭体 粗体 (按需保留)",
+            "font_msgothic": "[日文字体] MS Gothic 哥特体 (按需保留)",
+            "font_msmincho": "[日文字体] MS Mincho 明朝体 (按需保留)",
+            "font_yugothic": "[日文字体] 游黑体 常规 (可以精简)",
+            "font_yugothicbold": "[日文字体] 游黑体 粗体 (可以精简)",
+            "font_yugothiclight": "[日文字体] 游黑体 细体 (可以精简)",
+            "font_yugothicmedium": "[日文字体] 游黑体 中等 (可以精简)",
+            "font_yumin": "[日文字体] 游明朝体 (可以精简)",
+            "font_batang": "[韩文字体] Batang 经典衬线 (可以精简)",
+            "font_gulim": "[韩文字体] Gulim 经典无衬线 (可以精简)",
+            "font_malgungothic": "[韩文字体] 微软清黑体 常规 (按需保留)",
+            "font_malgungothicbold": "[韩文字体] 微软清黑体 粗体 (按需保留)",
+            "font_malgungothicsemilight": "[韩文字体] 微软清黑体 半细体 (按需保留)",
+
+            // === 西文字体 (5级梯队逻辑划分) ===
+            "font_segoeui": "[西文字体] Segoe UI 核心界面 常规 (绝对保留)",
+            "font_segoe_ui_variable": "[西文字体] Segoe UI Variable 新版核心界面 (绝对保留)",
+            
+            "font_arial": "[西文字体] Arial 经典无衬线 (建议保留)",
+            "font_arialblack": "[西文字体] Arial Black 特粗无衬线 (建议保留)",
+            "font_calibri": "[西文字体] Calibri 默认无衬线 (建议保留)",
+            "font_consolas": "[西文字体] Consolas 编程等宽 (建议保留)",
+            "font_georgia": "[西文字体] Georgia 网页衬线 (建议保留)",
+            "font_impact": "[西文字体] Impact 特粗标题体 (建议保留)",
+            "font_lucidaconsole": "[西文字体] Lucida Console 经典等宽 (建议保留)",
+            "font_tahoma": "[西文字体] Tahoma 经典无衬线 (建议保留)",
+            "font_timesnewroman": "[西文字体] Times New Roman 经典衬线 (建议保留)",
+            "font_trebuchetms": "[西文字体] Trebuchet MS 网页无衬线 (建议保留)",
+            "font_verdana": "[西文字体] Verdana 网页无衬线 (建议保留)",
+            "font_segoeui_italicssupplement": "[西文字体] Segoe UI 核心界面 斜体 (建议保留)",
+
+            "font_cambria": "[西文字体] Cambria 默认衬线 (按需保留)",
+            "font_cambria_regular": "[西文字体] Cambria Math 默认数学公式 (按需保留)",
+            
+            "font_aptos": "[西文字体] Aptos Office默认无衬线 (可以精简)",
+            "font_bahnschrift": "[西文字体] Bahnschrift 可变排版字体 (可以精简)",
+            "font_candara": "[西文字体] Candara 辅助无衬线 (可以精简)",
+            "font_constantia": "[西文字体] Constantia 辅助衬线 (可以精简)",
+            "font_corbel": "[西文字体] Corbel 辅助无衬线 (可以精简)",
+            "font_sitka": "[西文字体] Sitka 阅读衬线 (可以精简)",
+            "font_cascadiacode": "[西文字体] Cascadia Code 高级编程等宽 (可以精简)",
+            "font_cascadiamono": "[西文字体] Cascadia Mono 高级编程等宽 (可以精简)",
+
+            "font_comicsansms": "[西文字体] Comic Sans MS 卡通手写 (推荐精简)",
+            "font_gabriola": "[西文字体] Gabriola 艺术花体 (推荐精简)",
+            "font_inkfree": "[西文字体] Ink Free 随意手写 (推荐精简)",
+            "font_segoeprint": "[西文字体] Segoe Print 手写打印 常规 (推荐精简)",
+            "font_segoeprintbold": "[西文字体] Segoe Print 手写打印 粗体 (推荐精简)",
+            "font_segoescript": "[西文字体] Segoe Script 连笔手写 (推荐精简)",
+            "font_franklingothic": "[西文字体] Franklin Gothic 传统印刷无衬线 (推荐精简)",
+            "font_palatinolinotype": "[西文字体] Palatino Linotype 传统印刷衬线 (推荐精简)",
+            "font_ms_sans_serif": "[西文字体] MS Sans Serif 古董无衬线 (推荐精简)",
+            "font_ms_serif": "[西文字体] MS Serif 古董衬线 (推荐精简)",
+            "font_microsoftsansserif": "[西文字体] Microsoft Sans Serif 老旧无衬线 (推荐精简)",
+            "font_arialnova": "[西文字体] Arial Nova 替代版无衬线 (推荐精简)",
+            "font_sans_serif_collection": "[西文字体] Sans Serif Collection 无衬线集合 (推荐精简)",
+
+            // === 区域小语种 ===
+
+            // [中东与北非]
+            "font_aharonibold": "[中东与北非] 希伯来文 粗体 (可以精简)",
+            "font_aldhabi": "[中东与北非] 阿拉伯文 (可以精简)",
+            "font_andalus": "[中东与北非] 阿拉伯文 (可以精简)",
+            "font_arabictypesetting": "[中东与北非] 阿拉伯文排版 (可以精简)",
+            "font_david": "[中东与北非] 希伯来文 (可以精简)",
+            "font_estrangeloedessa": "[中东与北非] 叙利亚文 (可以精简)",
+            "font_frankruehl": "[中东与北非] 希伯来文 (可以精简)",
+            "font_gisha": "[中东与北非] 希伯来文 常规 (可以精简)",
+            "font_gishabold": "[中东与北非] 希伯来文 粗体 (可以精简)",
+            "font_levenimmt": "[中东与北非] 希伯来文 (可以精简)",
+            "font_miriam": "[中东与北非] 希伯来文 (可以精简)",
+            "font_narkisim": "[中东与北非] 希伯来文 (可以精简)",
+            "font_rod": "[中东与北非] 希伯来文 (可以精简)",
+            "font_sakkalmajalla": "[中东与北非] 阿拉伯文 常规 (可以精简)",
+            "font_sakkalmajallabold": "[中东与北非] 阿拉伯文 粗体 (可以精简)",
+            "font_simplifiedarabic": "[中东与北非] 阿拉伯文简体 (可以精简)",
+            "font_traditionalarabic": "[中东与北非] 阿拉伯文繁体 (可以精简)",
+            "font_urdutypesetting": "[中东与北非] 乌尔都文 (可以精简)",
+
+            // [南亚地区]
+            "font_aparajita": "[南亚地区] 梵文 (可以精简)",
+            "font_gautami": "[南亚地区] 泰卢固文 (可以精简)",
+            "font_iskoolapota": "[南亚地区] 僧伽罗文 (可以精简)",
+            "font_kalinga": "[南亚地区] 奥里亚文 (可以精简)",
+            "font_kartika": "[南亚地区] 马拉雅拉姆文 (可以精简)",
+            "font_kokila": "[南亚地区] 梵文 (可以精简)",
+            "font_latha": "[南亚地区] 泰米尔文 (可以精简)",
+            "font_mangal": "[南亚地区] 梵文 (可以精简)",
+            "font_mvboli": "[南亚地区] 马尔代夫文 (可以精简)",
+            "font_nirmalaui": "[南亚地区] 印度多语界面 (可以精简)",
+            "font_nirmalaui_regular": "[南亚地区] 印度多语界面 (可以精简)",
+            "font_raavi": "[南亚地区] 旁遮普文 (可以精简)",
+            "font_shonar": "[南亚地区] 孟加拉文 (可以精简)",
+            "font_shruti": "[南亚地区] 古吉拉特文 (可以精简)",
+            "font_tunga": "[南亚地区] 坎纳达文 (可以精简)",
+            "font_utsaah": "[南亚地区] 梵文 (可以精简)",
+            "font_vani": "[南亚地区] 泰卢固文 (可以精简)",
+            "font_vijaya": "[南亚地区] 泰米尔文 (可以精简)",
+            "font_vrinda": "[南亚地区] 孟加拉文 (可以精简)",
+
+            // [东南亚地区]
+            "font_angsananew": "[东南亚地区] 泰文 (可以精简)",
+            "font_angsanaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_browallianew": "[东南亚地区] 泰文 (可以精简)",
+            "font_browalliaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_cordianew": "[东南亚地区] 泰文 (可以精简)",
+            "font_cordiaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_daunpenh": "[东南亚地区] 高棉文 (可以精简)",
+            "font_dilleniaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_dokchampa": "[东南亚地区] 老挝文 (可以精简)",
+            "font_eucrosiaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_freesiaupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_irisupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_jasmineupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_javanesetext": "[东南亚地区] 爪哇文 (可以精简)",
+            "font_khmerui": "[东南亚地区] 高棉文界面 (可以精简)",
+            "font_kodchiangupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_laoui": "[东南亚地区] 老挝文界面 (可以精简)",
+            "font_leelawadee": "[东南亚地区] 泰文 常规 (可以精简)",
+            "font_leelawadeebold": "[东南亚地区] 泰文 粗体 (可以精简)",
+            "font_leelawadeeui": "[东南亚地区] 泰老双语界面 (可以精简)",
+            "font_leelawadeeui_regular": "[东南亚地区] 泰老双语界面 (可以精简)",
+            "font_lilyupc": "[东南亚地区] 泰文 (可以精简)",
+            "font_mmrtext": "[东南亚地区] 缅甸文 (可以精简)",
+            "font_moolboran": "[东南亚地区] 高棉文 (可以精简)",
+            "font_myanmartext": "[东南亚地区] 缅甸文 常规 (可以精简)",
+            "font_myanmartextbold": "[东南亚地区] 缅甸文 粗体 (可以精简)",
+
+            // [非洲地区]
+            "font_ebrima": "[非洲地区] 埃塞俄比亚文 常规 (可以精简)",
+            "font_ebrimabold": "[非洲地区] 埃塞俄比亚文 粗体 (可以精简)",
+            "font_nyala": "[非洲地区] 埃塞俄比亚文 (可以精简)",
+
+            // [美洲土著]
+            "font_euphemia": "[美洲土著] 加拿大土著文 (可以精简)",
+            "font_gadugi": "[美洲土著] 美洲原住民文 常规 (可以精简)",
+            "font_gadugibold": "[美洲土著] 美洲原住民文 粗体 (可以精简)",
+            "font_plantagenet": "[美洲土著] 切罗基文 (可以精简)",
+
+            // [中亚及东亚]
+            "font_microsofthimalaya": "[中亚及东亚] 藏文 (可以精简)",
+            "font_microsoftuighur": "[中亚及东亚] 维吾尔文 (可以精简)",
+            "font_mongolianbaiti": "[中亚及东亚] 蒙古文 (可以精简)",
+            "font_new_tai_lue": "[中亚及东亚] 新傣文 (可以精简)",
+            "font_newtailue": "[中亚及东亚] 新傣文 常规 (可以精简)",
+            "font_newtailuebold": "[中亚及东亚] 新傣文 粗体 (可以精简)",
+            "font_phagspa": "[中亚及东亚] 八思巴文 常规 (可以精简)",
+            "font_phagspabold": "[中亚及东亚] 八思巴文 粗体 (可以精简)",
+            "font_sylfaen": "[中亚及东亚] 亚美尼亚与格鲁吉亚文 (可以精简)",
+            "font_tai_le": "[中亚及东亚] 德宏傣文 常规 (可以精简)",
+            "font_taile": "[中亚及东亚] 德宏傣文 常规 (可以精简)",
+            "font_tailebold": "[中亚及东亚] 德宏傣文 粗体 (可以精简)",
+            "font_yibaiti": "[中亚及东亚] 彝文 (可以精简)"
+        };
+
+        const logDiv = document.getElementById('log');
+        function writeLog(msg) { 
+            logDiv.innerHTML += msg + "\n"; 
+            logDiv.scrollTop = logDiv.scrollHeight; 
+        }
+
+        document.getElementById('fileInput').addEventListener('change', async function(e) {
+            const files = e.target.files;
+            if(files.length === 0) return;
+            logDiv.innerHTML = "▶ 开始执行...\n";
+
+            for(let i = 0; i < files.length; i++) {
+                const file = files[i];
+
+                writeLog(`[读取] ${file.name}`);
+                const text = await file.text();
+                const lines = text.split('\n');
+                
+                // 严格正则：只匹配以 font_ 开头的标签
+                const regex = /^\s*<c>(font_[a-zA-Z0-9_]+)\s+.*?<\/c>/i;
+
+                for(let j = 0; j < lines.length; j++) {
+                    let line = lines[j];
+                    if(!line.includes("<!--")) {
+                        let match = line.match(regex);
+                        if(match && match[1]) {
+                            let key = match[1].toLowerCase();
+                            if(fontDict[key]) {
+                                lines[j] = line.replace(/\r$/, '') + ` <!-- ${fontDict[key]} -->\r`;
+                            }
+                        }
+                    }
+                }
+
+                const newContent = lines.join('\n');
+                // 修改为 application/octet-stream，强制浏览器静默下载，不预览
+                const blob = new Blob([newContent], { type: 'application/octet-stream' });
+                const url = URL.createObjectURL(blob);
+                
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = file.name.replace('.xml', '_注释版.xml');
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                writeLog(`  ✔ 成功备注: ${a.download}`);
+            }
+            writeLog("\n✅ 搞定！所有选择的文件均已处理并触发下载。");
+            e.target.value = ""; 
+        });
+    </script>
+</body>
+</html>
